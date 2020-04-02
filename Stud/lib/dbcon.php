@@ -1,10 +1,10 @@
 <?php
 //core
 function dbcon(){
-	$user = "root";
-	$pass = "";
-	$host = "localhost";
-	$db = "cman";
+	$user = "dev";
+	$pass = "secret";
+	$host = "mysql";
+	$db = "dev_exam";
 	@mysql_pconnect($host,$user,$pass);
 	mysql_select_db($db);
 }

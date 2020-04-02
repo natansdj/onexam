@@ -18,7 +18,7 @@
 			<link href="bootstrap/css/font-awesome.css" rel="stylesheet" media="screen">
 			<link href="bootstrap/font-awesome-4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 			<link href="bootstrap/css/my_style.css" rel="stylesheet" media="screen">
-			<link href="bootstrap/css/print.css" rel="stylesheet" media="print">			
+<!--			<link href="bootstrap/css/print.css" rel="stylesheet" media="print">			-->
 			<link href="vendors/easypiechart/jquery.easy-pie-chart.css" rel="stylesheet" media="screen">
 			<link href="assets/styles.css" rel="stylesheet" media="screen">				
 		    <link href="bootstrap/css/bootstrap.min1.css" rel="stylesheet" media="screen">

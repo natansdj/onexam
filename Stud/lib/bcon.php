@@ -3,7 +3,7 @@
 function dbcon(){
 	$user = "root";
 	$pass = "";
-	$host = "localhost";
+	$host = "mysql";
 	$db = "cman";
 	@mysql_pconnect($host,$user,$pass);
 	mysql_select_db($db);

@@ -1,8 +1,8 @@
 <?php
-$host="localhost";
-		$uname="aisysid_admin";
-		$pas="aisysid2020";
-		$db_name="aisysid_cman";
+$host="mysql";
+		$uname="dev";
+		$pas="secret";
+		$db_name="dev_exam";
 		$tbl_name="student";
 		
 		mysql_connect("$host","$uname","$pas") or die ("cannot connect");

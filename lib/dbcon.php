@@ -1,10 +1,12 @@
 <?php
+session_save_path('./storage/session');
+
 //core
 function dbcon(){
-	$user = "aisysid_admin";
-	$pass = "aisysid2020";
-	$host = "localhost";
-	$db = "aisysid_cman";
+	$user = "dev";
+	$pass = "secret";
+	$host = "mysql";
+	$db = "dev_exam";
 	mysql_connect($host,$user,$pass);
 	mysql_select_db($db);
 }
