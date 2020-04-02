@@ -1,0 +1,35 @@
+version: '2'
+services:
+  #######################################
+  # PHP application Docker container
+  #######################################
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: d_exam
+    container_name: dc_exam
+    external_links:
+      - dev_mysql:mysql
+    networks:
+      default:
+        ipv4_address: 172.18.0.151
+    volumes:
+      - ../:/app/
+      - ./:/docker/
+    # cap and privileged needed for slowlog
+    cap_add:
+      - SYS_PTRACE
+    privileged: true
+    env_file:
+      - etc/environment.yml
+      - etc/environment.development.yml
+    mem_limit: 1000m
+    environment:
+      VIRTUAL_HOST: "exam.vm, www.exam.vm"
+      VIRTUAL_PORT: "80"
+
+networks:
+  default:
+    external:
+      name: dev
